@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital News</title>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <nav>
+        <div class="main-nav container flex">
+
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="/logo.png" alt="company-logo">
+            </a>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')" >Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')" >Politics</li>
+                    <li class="hover-link nav-item" id="technology" onclick="onNavItemClick('technology')" >Technology</li>
+                    <li class="hover-link nav-item" id="fashion" onclick="onNavItemClick('fashion')" >Fashion</li>
+                </ul>
+            </div>
+
+            <div class="search-bar flex">
+                <input type="text" class="news-input" id="search-text" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+
+             <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+      </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-container container flex" id="card-container">
+            
+        </div>
+    </main>
+
+    <!-- DOM K ANDAR SE GAYAB HO JAATI H -->
+    <template id="template-news-card">
+        <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200" id="news-img" alt="news-image">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+                    <p class="news-desc" id="news-desc">lorem20</p>
+                </div>
+            </div>
+        </template>
+
+    <!-- SCRIPT JS -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
