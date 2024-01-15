@@ -1,4 +1,5 @@
-const API_KEY = "de22f88838014a00960de36e66c13f60";
+// Use the api key to fetch api
+const API_KEY = "";
 const url = "https://newsapi.org/v2/everything?q=";
 
 function reload() {
